@@ -3,7 +3,7 @@ var path=require("path");
 
 var router=express.Router();
 
-var user_data=require("./..models/user-data.js");
+var user_data=require("../models/user_data");
 
 router.get("/",function(req,res){
      res.render("home",{user:user_data});
